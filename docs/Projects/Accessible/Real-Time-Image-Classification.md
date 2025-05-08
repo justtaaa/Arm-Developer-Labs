@@ -7,8 +7,6 @@ sidebar:
 
 <img class="image image--xl" src="./images/computer_vision.jpg"/>
 
-### Audience
-Computer Science / Electronic Engineering.
 
 ## Description
 This project aims to develop a real-time image classification system using Convolutional Neural Networks (CNN) on an Arm Cortex-M microcontroller with CMSIS-NN. The main deliverables include training a CNN model on a custom dataset, quantizing the model to deploy it on resource-constrained devices, and transforming the model into a C format to compile and run on the microcontroller. The project will provide practical experience in running AI models on edge devices and optimizing AI models for efficient performance. The final output will be a functional image classification system capable of real-time processing on a microcontroller.

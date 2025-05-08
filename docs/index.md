@@ -4,7 +4,7 @@ tags: TeXt
 article_header:
   type: cover
   image:
-    src: ./images/DeveloperLabs_Header.png
+    src: ./images/Research_on_arm_banner.png
 ---
 # Arm Developer Labs
 

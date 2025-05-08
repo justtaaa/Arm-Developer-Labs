@@ -7,11 +7,6 @@ sidebar:
 
 <img class="image image--xl" src="./images/mathworks.png"/>
 
-
-### Target Audience
-
-Electronic Engineering, Computer Engineering, and Computer Science undergraduates with an interest in automotive systems, embedded software, and real-time system verification.
-
 ## Description
 
 This advanced project challenges students to design, implement, and verify a real-time automotive control application using MATLAB Simulink, Embedded Coder, and Arm Fast Models targeting the Cortex-M7 processor. Students will employ the V-Model software development lifecycle to enforce rigorous validation and verification at each stage, culminating in a Hardware-in-the-Loop (HIL) setup using Processor-in-the-Loop (PIL) simulation to measure code coverage and execution profiles. .

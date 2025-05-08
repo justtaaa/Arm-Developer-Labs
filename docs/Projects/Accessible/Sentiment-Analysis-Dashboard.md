@@ -7,9 +7,6 @@ sidebar:
 
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 
-### Audience
-
-Electronic Engineering, Computer Engineering, Computer science or related fields
 
 ## Description
 This project aims to develop a sentiment analysis dashboard for keywords related to the semiconductor industry. The main deliverable is a web scraping script that gathers text data from various semiconductor news sites. Example sites are [SemiconductorEngineering.com](https://semiengineering.com/), [IEEE Spectrum](https://spectrum.ieee.org/), [EETimes](https://www.eetimes.com/tag/semiconductors/), [SemiconductorDigest](https://www.semiconductor-digest.com/), [SemiconductorToday](https://semiconductor-today.com/), [Financial Times - Semiconductors](https://www.ft.com/semiconductors), [Bezinga Semiconductors](https://www.benzinga.com/topic/semiconductors).
