@@ -57,7 +57,7 @@ def convert_md_images_to_html(md_text: str, doc_path: Path, docs_dir: str) -> st
     def replace(match):
         img_path = match.group(1)
 
-        if doc_path.resolve() == Path("../README.md").resolve() and img_path == "./images/Research_on_arm_banner.png":
+        if doc_path.resolve() == Path("../README.md").resolve() and img_path == "./images/DeveloperLabs_Header.png":
             return ""
         
         source_path = (doc_path.parent / img_path).resolve()
