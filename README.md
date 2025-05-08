@@ -7,7 +7,7 @@ Welcome to our collection of industry-focused software challenges. This reposito
 Exceptional solutions will be internally referred for relevant jobs at Arm. Take part, showcase your skills, and help drive innovation across the Arm ecosystem!
 
 
-[Developer Labs Website](https://arm-university.github.io/Arm-Developer-Labs/)
+## [Developer Labs Website](https://arm-university.github.io/Arm-Developer-Labs/)
 
 ## Why Participate?
 
