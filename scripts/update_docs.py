@@ -77,7 +77,7 @@ def convert_md_images_to_html(md_text: str, doc_path: Path, docs_dir: str) -> st
 
 def convert_md(md_text: str) -> str:
     pattern_link = "[Developer Labs Website](https://arm-university.github.io/Arm-Developer-Labs/)"
-    replacement_link = "[Developer Labs Website](https://github.com/arm-university/Arm-Developer-Labs)"
+    replacement_link = "[Developer Labs Repository](https://github.com/arm-university/Arm-Developer-Labs)"
     pattern_youtube = "[![Arm-CMU collaboration](https://img.youtube.com/vi/zaRozkrcix0/0.jpg)](https://www.youtube.com/watch?v=zaRozkrcix0)"
     replacement_youtube = '<iframe width="560" height="315" src="https://www.youtube.com/embed/zaRozkrcix0?si=eRZirXrv5300fnBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 
