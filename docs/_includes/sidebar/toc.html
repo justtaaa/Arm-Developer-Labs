@@ -1,4 +1,31 @@
 {%- if page.sidebar.nav -%}
+
+  <!-- Subject‐filter UI -->
+  <div class="sidebar-subjects">
+    <strong>Filter by Subject:</strong>
+    {%- assign all_subjects = "" | split: "" -%}
+    {%- assign nav_group = site.data.navigation[page.sidebar.nav] -%}
+    {%- for grp in nav_group -%}
+      {%- for item in grp.children -%}
+        {%- for s in item.subjects -%}
+          {%- unless all_subjects contains s -%}
+            {%- assign all_subjects = all_subjects | push: s -%}
+          {%- endunless -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- for subject in all_subjects -%}
+      <label>
+        <input type="checkbox"
+               class="subject-filter"
+               value="{{ subject }}"
+               onchange="filterTOC()">
+        {{ subject }}
+      </label>
+    {%- endfor -%}
+  </div>
+
+  <!-- TOC with data‐subjects -->
   <div class="sidebar-toc">
     {%- assign _sidebar_nav = site.data.navigation[page.sidebar.nav] -%}
     {%- if _sidebar_nav -%}
@@ -11,15 +38,34 @@
             {%- assign _nav_url = __return -%}
             {%- include snippets/get-nav-url.html path=page.url -%}
             {%- assign _page_url = __return -%}
-            {%- if _nav_url == _page_url -%}
-              <li class="toc-h2 active"><a href="{{ _nav_url }}">{{ _child.title }}</a></li>
-            {%- else -%}
-              <li class="toc-h2"><a href="{{ _nav_url }}">{{ _child.title }}</a></li>
-            {%- endif -%}
+            {%- assign active = (_nav_url == _page_url) -%}
+            <li class="toc-h2{% if active %} active{% endif %}"
+                data-subjects="{{ _child.subjects | join:' ' }}">
+              <a href="{{ _nav_url }}">{{ _child.title }}</a>
+            </li>
           {%- endfor -%}
         {%- endif -%}
       {%- endfor -%}
-      </ul>
+    </ul>
     {%- endif -%}
   </div>
+
+  <!-- Filter logic -->
+  <script>
+    function filterTOC() {
+      const checked = Array.from(
+        document.querySelectorAll('.subject-filter:checked')
+      ).map(cb => cb.value);
+      document
+        .querySelectorAll('.toc--navigator .toc-h2')
+        .forEach(li => {
+          const itemSubjects = li.dataset.subjects.split(' ');
+          const keep =
+            checked.length === 0 ||
+            itemSubjects.some(s => checked.includes(s));
+          li.style.display = keep ? '' : 'none';
+        });
+    }
+  </script>
+
 {%- endif -%}
