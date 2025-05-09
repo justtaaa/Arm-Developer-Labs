@@ -128,8 +128,9 @@
   cursor: pointer;
   font-size: .85rem;
   color: var(--text-muted,#666);
-  margin-bottom: .5rem;
   user-select: none;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 .filter-toggle .chevron {
   display: inline-block;
