@@ -40,7 +40,7 @@
             {%- assign _page_url = __return -%}
             {%- assign active = (_nav_url == _page_url) -%}
             <li class="toc-h2{% if active %} active{% endif %}"
-                data-subjects="{{ _child.subjects | join:' ' }}">
+              data-subjects='{{ _child.subjects | jsonify }}'>
               <a href="{{ _nav_url }}">{{ _child.title }}</a>
             </li>
           {%- endfor -%}
@@ -56,10 +56,17 @@
       const checked = Array.from(
         document.querySelectorAll('.subject-filter:checked')
       ).map(cb => cb.value);
+  
       document
         .querySelectorAll('.toc--navigator .toc-h2')
         .forEach(li => {
-          const itemSubjects = li.dataset.subjects.split(' ');
+          let itemSubjects = [];
+          try {
+            itemSubjects = JSON.parse(li.dataset.subjects);
+          } catch(e) {
+            itemSubjects = li.dataset.subjects.split(',');
+          }
+          itemSubjects = itemSubjects.map(s => s.trim());
           const keep =
             checked.length === 0 ||
             itemSubjects.some(s => checked.includes(s));
