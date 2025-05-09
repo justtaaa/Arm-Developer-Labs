@@ -64,30 +64,31 @@
 }
 
 /* ─── Sidebar Tag Filters ─────────────────────────────────────────────────── */
+.sidebar-subjects.collapsed {
+  display: none;
+}
 .sidebar-subjects {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-bottom: 1px solid var(--border-color,#ddd);
   margin-bottom: 1rem;
+  font-size: .8rem;
 }
 .sidebar-subjects strong {
   display: block;
-  margin-bottom: .5rem;
-  font-size: .85rem;
+  margin-bottom: .25rem;
+  font-size: .8rem;
   text-transform: uppercase;
   color: var(--text-muted,#666);
 }
 .sidebar-subjects label {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  margin: 0 .75rem .5rem 0;
-  font-size: .9rem;
-  cursor: pointer;
+  margin: .25rem 0;
 }
 .sidebar-subjects .subject-filter {
-  margin-right: .3rem;
+  margin-right: .4ch;
   accent-color: var(--primary-color,#3182ce);
 }
-
 /* ─── Sidebar TOC Navigator ───────────────────────────────────────────────── */
 .sidebar-toc .toc--navigator {
   list-style: none;
@@ -117,10 +118,30 @@
   font-weight: 600;
   color: var(--primary-color, #3182ce);
 }
-
 .sidebar-toc .toc-h2[style*="display: none"] {
   opacity: 0;
   max-height: 0;
 }
-
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: .85rem;
+  color: var(--text-muted,#666);
+  margin-bottom: .5rem;
+  user-select: none;
+}
+.filter-toggle .chevron {
+  display: inline-block;
+  width: .6em;
+  height: .6em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform .2s ease;
+  margin-right: .5ch;
+}
+.filter-toggle .chevron.rotated {
+  transform: rotate(45deg);
+}
 /* end custom scss snippet */
