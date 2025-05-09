@@ -78,7 +78,7 @@
           itemSubjects = itemSubjects.map(s => s.trim());
           const keep =
             checked.length === 0 ||
-            itemSubjects.some(s => checked.includes(s));
+            itemSubjects.every(s => checked.includes(s));
           li.style.display = keep ? '' : 'none';
         });
     }
