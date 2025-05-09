@@ -68,23 +68,20 @@
   padding: 1rem;
   border-bottom: 1px solid var(--border-color,#ddd);
   margin-bottom: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-gap: 0.5rem 1rem;
 }
 .sidebar-subjects strong {
   display: block;
   margin-bottom: .5rem;
-  font-size: .75rem; 
+  font-size: .85rem;
   text-transform: uppercase;
   color: var(--text-muted,#666);
 }
 .sidebar-subjects label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  font-size: .8rem;
+  margin: 0 .75rem .5rem 0;
+  font-size: .9rem;
   cursor: pointer;
-  user-select: none;
 }
 .sidebar-subjects .subject-filter {
   margin-right: .3rem;
@@ -101,7 +98,7 @@
   margin: 1.25rem 0 0.5rem;
   font-size: 0.85rem;
   text-transform: uppercase;
-  color: var(--text-muted, #333E48);
+  color: var(--text-muted, #666);
   font-weight: 600;
 }
 .sidebar-toc .toc-h2 {
@@ -113,7 +110,7 @@
 .sidebar-toc .toc-h2 a {
   display: block;
   text-decoration: none;
-  color: var(--text-color, #333E48);
+  color: var(--text-color, #333);
   font-size: 0.95rem;
 }
 .sidebar-toc .toc-h2.active a {
