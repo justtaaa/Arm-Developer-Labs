@@ -11,56 +11,75 @@ header:
       # @end locale config
     url: Research/research.html
 projects:
-- title: Accessible
-  children:
-  - title: Smart-Voice-Assistant
-    url: /Projects/Accessible/Smart-Voice-Assistant.html
-  - title: Sentiment-Analysis-Dashboard
-    url: /Projects/Accessible/Sentiment-Analysis-Dashboard.html
-  - title: Write-A-Learning-Path
-    url: /Projects/Accessible/Write-A-Learning-Path.html
-  - title: AMBA-Simulator-Framework
-    url: /Projects/Accessible/AMBA-Simulator-Framework.html
-  - title: Academic-Trends-Dashboard
-    url: /Projects/Accessible/Academic-Trends-Dashboard.html
-  - title: Real-Time-Image-Classification
-    url: /Projects/Accessible/Real-Time-Image-Classification.html
-  - title: Processor-in-the-Loop-Automotive
-    url: /Projects/Accessible/Processor-in-the-Loop-Automotive.html
-- title: Advanced
-  children:
-  - title: AI-Powered-Porting-Tool
-    url: /Projects/Advanced/AI-Powered-Porting-Tool.html
-  - title: Quantisation-Aware-Training
-    url: /Projects/Advanced/Quantisation-Aware-Training.html
-  - title: Architecture-Insight-Dashboard
-    url: /Projects/Advanced/Architecture-Insight-Dashboard.html
-  - title: LLM-Benchmark-on-Arm-Server
-    url: /Projects/Advanced/LLM-Benchmark-on-Arm-Server.html
-  - title: SpecINT2017-benchmarking-on-Arm64
-    url: /Projects/Advanced/SpecINT2017-benchmarking-on-Arm64.html
-  - title: AI-Agents
-    url: /Projects/Advanced/AI-Agents.html
-  - title: Arduino-IDE-Windows-on-Arm
-    url: /Projects/Advanced/Arduino-IDE-Windows-on-Arm.html
+  - title: Accessible
+    children:
+      - title: Academic-Trends-Dashboard
+        url: /Projects/Accessible/Academic-Trends-Dashboard.html
+        subjects: ["Data Visualization", "Web"]
+      - title: AMBA-Simulator-Framework
+        url: /Projects/Accessible/AMBA-Simulator-Framework.html
+        subjects: ["Embedded Systems", "Performance and Architecture"]
+      - title: Processor-in-the-Loop-Automotive
+        url: /Projects/Accessible/Processor-in-the-Loop-Automotive.html
+        subjects: ["Automotive", "Embedded Systems"]
+      - title: Real-Time-Image-Classification
+        url: /Projects/Accessible/Real-Time-Image-Classification.html
+        subjects: ["Machine Learning", "Computer Vision"]
+      - title: Sentiment-Analysis-Dashboard
+        url: /Projects/Accessible/Sentiment-Analysis-Dashboard.html
+        subjects: ["Machine Learning", "Natural Language Processing", "Web"]
+      - title: Smart-Voice-Assistant
+        url: /Projects/Accessible/Smart-Voice-Assistant.html
+        subjects: ["Machine Learning", "Natural Language Processing", "Cloud"]
+      - title: Write-A-Learning-Path
+        url: /Projects/Accessible/Write-A-Learning-Path.html
+        subjects: ["Documentation", "Developer Tools"]
+  - title: Advanced
+    children:
+      - title: AI-Agents
+        url: /Projects/Advanced/AI-Agents.html
+        subjects: ["Machine Learning", "Robotics"]
+      - title: AI-Powered-Porting-Tool
+        url: /Projects/Advanced/AI-Powered-Porting-Tool.html
+        subjects: ["Machine Learning", "CI-CD", "Cloud"]
+      - title: Architecture-Insight-Dashboard
+        url: /Projects/Advanced/Architecture-Insight-Dashboard.html
+        subjects: ["Performance and Architecture", "Data Visualization"]
+      - title: Arduino-IDE-Windows-on-Arm
+        url: /Projects/Advanced/Arduino-IDE-Windows-on-Arm.html
+        subjects: ["Embedded Systems", "Developer Tools"]
+      - title: LLM-Benchmark-on-Arm-Server
+        url: /Projects/Advanced/LLM-Benchmark-on-Arm-Server.html
+        subjects: ["Machine Learning", "Performance and Architecture"]
+      - title: Quantisation-Aware-Training
+        url: /Projects/Advanced/Quantisation-Aware-Training.html
+        subjects: ["Machine Learning", "Optimization"]
+      - title: SpecINT2017-benchmarking-on-Arm64
+        url: /Projects/Advanced/SpecINT2017-benchmarking-on-Arm64.html
+        subjects: ["Performance and Architecture", "Benchmarking"]
 research:
-- title: PhD
-  children:
-  - title: HPC-Algorithm
-    url: /Research/PhD/HPC-Algorithm.html
-  - title: Bioinformatic-Pipeline-Analysis
-    url: /Research/PhD/Bioinformatic-Pipeline-Analysis.html
-  - title: R-Arm-Community-Support
-    url: /Research/PhD/R-Arm-Community-Support.html
-  - title: Machine-Learning-on-AWS-Graviton
-    url: /Research/PhD/Machine-Learning-on-AWS-Graviton.html
-  - title: FPGA-Accellerator-with-DDR
-    url: /Research/PhD/FPGA-Accellerator-with-DDR.html
-  - title: Haskell-Compiler-Windows-on-Arm
-    url: /Research/PhD/Haskell-Compiler-Windows-on-Arm.html
-- title: Extended Team Projects
-  children:
-  - title: Compliance-Ready-Smart-Camera-System
-    url: /Research/Extended-Team-Projects/Compliance-Ready-Smart-Camera-System.html
-  - title: Human-Centric-Robotics
-    url: /Research/Extended-Team-Projects/Human-Centric-Robotics.html
+  - title: PhD
+    children:
+      - title: Bioinformatic-Pipeline-Analysis
+        url: /Research/PhD/Bioinformatic-Pipeline-Analysis.html
+        subjects: ["Bioinformatics", "Data Science"]
+      - title: FPGA-Accellerator-with-DDR
+        url: /Research/PhD/FPGA-Accellerator-with-DDR.html
+        subjects: ["Hardware Acceleration", "Embedded Systems"]
+      - title: Haskell-Compiler-Windows-on-Arm
+        url: /Research/PhD/Haskell-Compiler-Windows-on-Arm.html
+        subjects: ["Compilers", "Developer Tools"]
+      - title: HPC-Algorithm
+        url: /Research/PhD/HPC-Algorithm.html
+        subjects: ["High Performance Computing", "Performance and Architecture"]
+      - title: R-Arm-Community-Support
+        url: /Research/PhD/R-Arm-Community-Support.html
+        subjects: ["Community", "Data Science"]
+  - title: Extended Team Projects
+    children:
+      - title: Compliance-Ready-Smart-Camera-System
+        url: /Research/Extended-Team-Projects/Compliance-Ready-Smart-Camera-System.html
+        subjects: ["Security", "Embedded Systems"]
+      - title: Human-Centric-Robotics
+        url: /Research/Extended-Team-Projects/Human-Centric-Robotics.html
+        subjects: ["Robotics", "Machine Learning"]
