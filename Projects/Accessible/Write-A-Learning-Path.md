@@ -6,8 +6,8 @@
 ## Description
 This exciting opportunity invites master students to create and submit a comprehensive learning path focused on any aspect of Arm technology. Participants will have the chance to showcase their expertise, contribute to the academic community, and potentially publish their work for a wider audience. Learning paths are structured tutorials that guide learners through a series of topics and skills. For example, a project could involve developing a learning path on Arm-based embedded systems, culminating in a practical demonstration of a working prototype, such as a simple temperature monitoring system using a basic microcontroller and a few sensors. This project can be easily recreated with minimal hardware and software access. We look forward to seeing your innovative and insightful submissions!
 
+## Hardware, Software and Skills Required
 
-## Hardware / Software Requirements
 - Computer with Internet Connectivity
 
 ## Resources

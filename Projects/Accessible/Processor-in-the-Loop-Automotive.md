@@ -16,14 +16,15 @@ Students can choose from of the following **automotive application topics**:
 Each project will go through system design, simulation in Simulink, code generation via Embedded Coder, and real-time testing using Arm Fast Models and Code Profile Analyzer. Deliverables include models, auto-generated code, verification reports, and benchmarking results.
 
 
-## Hardware / Software Requirements
+## Hardware, Software and Skills Required
+
 
 - [**MATLAB & Simulink License**](https://uk.mathworks.com/pricing-licensing.html?prodcode=ML&intendeduse=edu)
-- **Languages & Modeling Tools**: C/C++, Simulink, Stateflow, Embedded Coder
+- **Languages & Modeling Tools**: Familiarity with C/C++, Simulink, Stateflow and Embedded Coder
 - **Verification Tools**: Processor-in-the-Loop (PIL), Code Profile Analyzer
 - **Target Hardware**: Arm Cortex-M7 (via [Arm Fast Models](https://uk.mathworks.com/products/connections/product_detail/arm-fast-models.html))
 - **Toolboxes**: Arm Compiler Support Package, Embedded Coder Support Package for ARM Cortex-M
-- [**Arm Fast Models support in MATLAB**](https://uk.mathworks.com/products/connections/product_detail/arm-fast-models.html)
+- [**Arm Fast Models in MATLAB**](https://uk.mathworks.com/products/connections/product_detail/arm-fast-models.html)
 - **V-Model lifecycle methodology** integrated via Simulink Verification and Validation
 
 

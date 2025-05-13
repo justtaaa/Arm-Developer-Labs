@@ -53,8 +53,8 @@ Project-Ideas
 
 ## How to Participate
 
-1. Read the project details clearly
-3. Let us know you've started by opening a discussion on GitHub. 
+1. Read the project details clearly and select one that you're most interested in
+2. If you’re interested in joining Arm, visit the [Early Career FAQ page](https://careers.arm.com/Early-Careers-FAQ) and make sure you have the legal right to work in the location of the role you’re interested in.
 
 For Arm-specific technical support and mentorship, sign up for free to the [Arm Developer program](https://www.arm.com/resources/developer-program?#register). Access to technical support and mentorship is available through our discord channel!
 
@@ -62,15 +62,9 @@ For Arm-specific technical support and mentorship, sign up for free to the [Arm 
 
 To receive recognition for your efforts.
 
-1. <a href="mailto:example@example.com?subject=Academic%20Project">**Send An email</a> to education@arm.com**. Use the title 'Project XXX' where XXX is replaced with your project name. Please include the following in the email body:
+1. **Fork this repository** and edit the `README.md` file in the `/Projects/Previous_Submissions` folder. As a minimum you must include a title, author(s) and a link to your source code. 
 
-- Name of the participant(s)
-- University / Academic affiliation (if applicable)
-- Links to your project outputs for review (e.g., GitHub repo, academic posters, reports etc.)
-
-Please do not include any confidential information in your contribution. This includes confidential software or unannounced product information. Please also clarify with your academic institution what content you are permitted to share. Please tick and add the following information to your email submission. 
-
-By sending this email, I confirm that you can use, modify, copy, and redistribute this contribution, under the Arm education or MIT license.
+Please do not include any confidential information in your contribution. This includes confidential software or unannounced product information. If you are a student, please also clarify with your academic institution what content you are permitted to share.
 
 2. **Post a link to your project on the `#developer-labs` discord channel** (sign up to the developer progam [here](https://www.arm.com/resources/developer-program?#register)). The post should include a short description and/or a screenshot with the `#developerchallenge` tag. 
 

@@ -15,7 +15,8 @@ This project aims to develop a reference design of AMBA (Advanced Microcontrolle
 
 The main deliverables include the Verilog design of the AMBA infrastructure, a Verilog test bench for testing the design, an RTL (Register Transfer Level) simulation flow to verify the functionality, and an FPGA prototyping platform to demonstrate the design in a real-world environment. The project will provide a comprehensive understanding of AMBA protocols and their implementation, making it an excellent learning opportunity for students interested in digital design and hardware description languages.
 
-## Hardware / Software Requirements
+## Hardware, Software and Skills Required
+
 - Languages: Verilog, SystemVerilog
 - Tooling: ModelSim, Quartus, Vivado
 - Hardware: FPGA development board (e.g., Xilinx or Altera), simulation tools

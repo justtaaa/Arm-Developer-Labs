@@ -27,11 +27,12 @@ The goal is to build a sophisticated system (beyond simple shell scripts) that u
 
 This project is an ideal blend of automation, machine learning, and systems programming — built with real-world impact in mind. The outcome could directly contribute to open source ecosystems and help bring cutting-edge bioinformatics tools to wider hardware audiences.
 
-## Hardware / Software Requirements
+## Hardware, Software and Skills Required
 
 Hardware: Access to Apple Silicon either through the cloud or with Physical hardware
-Languages: Python, Bash, Nextflow
-Tooling: nf-core pipelines, Conda, BioConda, Docker/Singularity, Snakemake
+Languages: Familiarity with Python, Bash and Nextflow
+Tooling: Experience or willing to learn nf-core pipelines, Conda, BioConda and Docker/Singularity.
+Background: Familiar with genomics or interest in computational biology. 
 
 ## Resources 
 

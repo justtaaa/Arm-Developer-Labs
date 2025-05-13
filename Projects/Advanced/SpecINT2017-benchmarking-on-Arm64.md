@@ -7,11 +7,11 @@
 
 This project aims to replicate the characterisation study from "SPEC CPU2017: Performance, Event, and Energy Characterization on the Core i7-8700K" on an Arm64 platform (e.g., Ampere Altra, AWS Graviton) using different compilers and performance profiling tools. The study will analyze how compiler optimizations and architectural features affect execution time, energy efficiency, and instruction throughput on Arm-based server processors. Deliverables include a comprehensive performance analysis report, reproducible benchmarking scripts, and a dataset comparing performance across different configurations. The report should locate microarchitectural bottlenecks using the [top-down methodology](https://developer.arm.com/documentation/109542/0100/Arm-Topdown-methodology), compiler performance and recommendations on how to improve performance.
 
-## Hardware / Software Requirements
+## Hardware, Software and Skills Required
 
-Hardware: Arm64-based server (Ampere Altra, AWS Graviton, Raspberry Pi for preliminary tests)
+Hardware: Access to Arm64-based server (Ampere Altra, AWS Graviton, Raspberry Pi for preliminary tests)
 
-Software:
+Software: Familiarity with performance engineering and a OOP with a language such as C++. 
 
 Compilers: GCC, LLVM/Clang, Arm Compiler for Linux
 

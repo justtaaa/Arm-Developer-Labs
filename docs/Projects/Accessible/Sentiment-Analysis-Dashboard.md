@@ -13,7 +13,8 @@ This project aims to develop a sentiment analysis dashboard for keywords related
 
 This data will then be processed through a sentiment analysis LLM (Large Language Model) to determine the sentiment of the content and how it varies over time. The project will provide practical experience in web scraping, data processing, databases and using LLMs for sentiment analysis. The final output will be a functional dashboard that displays the sentiment analysis results in an easy-to-understand format.
 
-## Hardware / Software Requirements
+## Hardware, Software and Skills Required
+
 - Languages: Intermediate understanding of Python
 - Hardware: Access to a computer with internet connectivity and access to cloud instances
 

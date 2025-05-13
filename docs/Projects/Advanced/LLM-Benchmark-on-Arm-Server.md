@@ -11,8 +11,9 @@ sidebar:
 This project aims to benchmark inference on Arm-based servers using the MLPerf Inference benchmark suite. The project spans performance analysis across different configurations of Arm-based servers. The main deliverable is a comprehensive benchmarking setup that can evaluate the performance of large language models (LLMs) on various Arm server configurations in addition to a report highlighting the performance difference and how to recreate the results. This project will provide practical experience in benchmarking, performance analysis, and working with Arm-based server architectures. The final output will be a detailed report and a functional benchmarking infrastructure that can be used for further research and development.
 
 
-## Hardware / Software Requirements
-- Languages: Python, C++
+## Hardware, Software and Skills Required
+
+- Languages: Intermediate understanding of Python and C++
 - Tooling: MLPerf, TensorFlow, PyTorch
 - Hardware: Arm-based server, access to cloud service providers
 - IP access: Arm Academic Access member (link to get if they don't have it)

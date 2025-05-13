@@ -8,7 +8,8 @@ This undergraduate project aims to develop a simple voice assistant that can rec
 
 The deliverables include a functional voice assistant capable of understanding and executing basic commands, along with documentation detailing the development process and the performance of the system.
 
-## Hardware / Software Requirements
+## Hardware, Software and Skills Required
+
 - Languages: Python, C++, Embedded C
 - Tooling: TensorFlow Lite for Microcontrollers, Keil MDK
 - Hardware: Cortex-M55/U55 development board (or Corstone Virtual Platform), microphone, peripheral devices (e.g., lights, speakers)

@@ -13,12 +13,13 @@ Students will apply QAT to maintain accuracy while reducing model size and infer
 
 The project encourages referencing work by contributing **optimized and quantized models for Arm platforms** on HuggingFace. The final quantized model will be **uploaded to HuggingFace** and may be submitted for listing in the [Arm on HuggingFace space](https://huggingface.co/Arm), encouraging open, community-supported contributions.
 
-## Hardware / Software Requirements  
-- **Languages**: Python, Java/Kotlin (if Android), Shell  
-- **Frameworks**: PyTorch 
+## Hardware, Software and Skills Required
+
+- **Languages**: Familiar with Python, pytorch and Java/Kotlin (if Android).
+- **Frameworks**: Intermediate understanding of PyTorch 
 - **Tooling**: PyTorch Lightning, Android Studio 
 - **Hardware Options**:  
-  - Android phone with Arm Cortex-A CPU 
+  - Android phone with Arm Cortex-A CPU or simulator through Android Studio. 
 - **Deployment Targets**:  
   - Android  
 

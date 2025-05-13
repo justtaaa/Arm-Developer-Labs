@@ -33,10 +33,9 @@ Potential Deliverables include:
 Team size: 2+ participants  
 Can be extended for dissertation-level depth or research publication.
 
-## Hardware / Software Requirements
+## Hardware, Software and Skills Required
 
-- **Languages**: Any
-- **Tooling**: Any
+- **Languages**: Familiarity with an OOP language. 
 - **Hardware**:
   - Raspberry Pi 4/5, Jetson Orin Nano or other Arm-based systems
   - Sensors: Any

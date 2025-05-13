@@ -14,7 +14,7 @@ This project aims to design a dashboard that tracks the progression and themes o
 The final output will be a functional dashboard that presents the data in an intuitive and interactive manner.
 
 
-## Hardware / Software Requirements
+## Hardware, Software and Compentency Requirements
 
 - Software: Intermediate understand of a scripting programming language (e.g., Python, JavaScript), web development and statistics.
 - Hardware: Access to a computer with internet connectivity

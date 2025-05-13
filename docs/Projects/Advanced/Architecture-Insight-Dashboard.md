@@ -18,7 +18,7 @@ This project aims to develop a comprehensive dashboard that lets a developer kno
  
 Students will gain hands-on experience with data visualization, statistical analysis, web development, and market analysis, providing valuable insights into the Arm ecosystem. 
 
-## Hardware / Software Skills
+## Hardware, Software and Skills Required
 
 You are free to explore your own implementation. The skills below are examples.
 

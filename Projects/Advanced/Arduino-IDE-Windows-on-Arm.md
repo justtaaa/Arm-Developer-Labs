@@ -16,10 +16,11 @@ This project focuses on **porting the Arduino IDE**—an essential open-source p
 This project aligns strongly with Arm’s mission to expand native software compatibility on Arm-based Windows devices. It provides students with a **deep dive into cross-platform development, native module compilation, and Arm architecture optimization**, making it ideal for CV building, community contribution, and real-world system-level experience.
 
 
-## Hardware / Software Requirements
+## Hardware, Software and Skills Required
 
-- **Languages**: JavaScript (Node.js), TypeScript, C++ (lzma-native)
-- **Tooling**:
+
+- **Languages**: Familiarity with JavaScript (Node.js), TypeScript and C++ (lzma-native)
+- **Tooling**: Familiarity or willing to learn
   - `CMake`, `Ninja`, `Visual Studio with C++ Desktop Dev`, UTM
   - `Windows Terminal`, `PowerShell`, `WSL2` (optional for cross-compilation)
 - **Hardware**: Access to a physical Windows on Arm device or a [WoA Virtual Machine running through UTM](https://mac.getutm.app/gallery/windows-11-arm)
