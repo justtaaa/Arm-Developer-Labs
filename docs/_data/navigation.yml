@@ -11,51 +11,49 @@ header:
       # @end locale config
     url: Research/research.html
 projects:
-  - title: Accessible
+  - title: Projects
     children:
       - title: Academic-Trends-Dashboard
-        url: /Projects/Accessible/Academic-Trends-Dashboard.html
+        url: /Projects/Projects/Academic-Trends-Dashboard.html
         subjects: ["Data Visualization", "Web"]
       - title: AMBA-Simulator-Framework
-        url: /Projects/Accessible/AMBA-Simulator-Framework.html
+        url: /Projects/Projects/AMBA-Simulator-Framework.html
         subjects: ["Embedded Systems", "Performance and Architecture"]
       - title: Processor-in-the-Loop-Automotive
-        url: /Projects/Accessible/Processor-in-the-Loop-Automotive.html
+        url: /Projects/Projects/Processor-in-the-Loop-Automotive.html
         subjects: ["Automotive", "Embedded Systems"]
       - title: Real-Time-Image-Classification
-        url: /Projects/Accessible/Real-Time-Image-Classification.html
+        url: /Projects/Projects/Real-Time-Image-Classification.html
         subjects: ["Machine Learning", "Computer Vision"]
       - title: Sentiment-Analysis-Dashboard
-        url: /Projects/Accessible/Sentiment-Analysis-Dashboard.html
+        url: /Projects/Projects/Sentiment-Analysis-Dashboard.html
         subjects: ["Machine Learning", "Natural Language Processing", "Web"]
       - title: Smart-Voice-Assistant
-        url: /Projects/Accessible/Smart-Voice-Assistant.html
+        url: /Projects/Projects/Smart-Voice-Assistant.html
         subjects: ["Machine Learning", "Natural Language Processing", "Cloud"]
       - title: Write-A-Learning-Path
-        url: /Projects/Accessible/Write-A-Learning-Path.html
+        url: /Projects/Projects/Write-A-Learning-Path.html
         subjects: ["Documentation", "Developer Tools"]
-  - title: Advanced
-    children:
       - title: AI-Agents
-        url: /Projects/Advanced/AI-Agents.html
+        url: /Projects/Projects/AI-Agents.html
         subjects: ["Machine Learning", "Robotics"]
       - title: AI-Powered-Porting-Tool
-        url: /Projects/Advanced/AI-Powered-Porting-Tool.html
+        url: /Projects/Projects/AI-Powered-Porting-Tool.html
         subjects: ["Machine Learning", "CI-CD", "Cloud"]
       - title: Architecture-Insight-Dashboard
-        url: /Projects/Advanced/Architecture-Insight-Dashboard.html
+        url: /Projects/Projects/Architecture-Insight-Dashboard.html
         subjects: ["Performance and Architecture", "Data Visualization"]
       - title: Arduino-IDE-Windows-on-Arm
-        url: /Projects/Advanced/Arduino-IDE-Windows-on-Arm.html
+        url: /Projects/Projects/Arduino-IDE-Windows-on-Arm.html
         subjects: ["Embedded Systems", "Developer Tools"]
       - title: LLM-Benchmark-on-Arm-Server
-        url: /Projects/Advanced/LLM-Benchmark-on-Arm-Server.html
+        url: /Projects/Projects/LLM-Benchmark-on-Arm-Server.html
         subjects: ["Machine Learning", "Performance and Architecture"]
       - title: Quantisation-Aware-Training
-        url: /Projects/Advanced/Quantisation-Aware-Training.html
+        url: /Projects/Projects/Quantisation-Aware-Training.html
         subjects: ["Machine Learning", "Optimization"]
       - title: SpecINT2017-benchmarking-on-Arm64
-        url: /Projects/Advanced/SpecINT2017-benchmarking-on-Arm64.html
+        url: /Projects/Projects/SpecINT2017-benchmarking-on-Arm64.html
         subjects: ["Performance and Architecture", "Benchmarking"]
 research:
   - title: PhD
@@ -72,6 +70,9 @@ research:
       - title: HPC-Algorithm
         url: /Research/PhD/HPC-Algorithm.html
         subjects: ["High Performance Computing", "Performance and Architecture"]
+      - title: Machine-Learning-on-AWS-Graviton
+        url: /Research/PhD/Machine-Learning-on-AWS-Graviton.html
+        subjects: ["Machine Learning", "Cloud Computing"]
       - title: R-Arm-Community-Support
         url: /Research/PhD/R-Arm-Community-Support.html
         subjects: ["Community", "Data Science"]

@@ -3,21 +3,18 @@ import re
 import shutil
 from pathlib import Path
 
-projects_undergraduate_dir = "../Projects/Accessible"
-projects_masters_dir = "../Projects/Advanced"
+projects_dir = "../Projects/Projects"
 research_phd_dir = "../Research/PhD"
 extended_projects_dir = "../Research/Extended-Team-Projects"
 
 projects_pathlist = [Path("../Projects/projects.md")]
-projects_undergraduate_pathlist = Path(projects_undergraduate_dir).rglob('*.md')
-projects_masters_pathlist = Path(projects_masters_dir).rglob('*.md')
+projects_projects_pathlist = Path(projects_dir).rglob('*.md')
 research_pathlist = [Path("../Research/research.md")]
 research_phd_pathlist = Path(research_phd_dir).rglob('*.md')
 research_extended_project_pathlist = Path(extended_projects_dir).rglob('*.md')
 
 docs_projects_dir = "../docs/Projects"
-docs_undergraudate_dir = "../docs/Projects/Accessible"
-docs_masters_dir = "../docs/Projects/Advanced"
+docs_projects_projects_dir = "../docs/Projects/Projects"
 docs_research_dir = "../docs/Research"
 docs_phd_dir = "../docs/Research/PhD"
 docs_extended_project_dir = "../docs/Research/Extended-Team-Projects"
@@ -42,7 +39,7 @@ article_header:
 """
 
 def clean() :
-    clean_lst = [docs_projects_dir,docs_undergraudate_dir, docs_masters_dir, docs_research_dir, docs_phd_dir]
+    clean_lst = [docs_projects_dir,docs_projects_projects_dir, docs_research_dir, docs_phd_dir]
     for dirpath in clean_lst:
         if os.path.exists(dirpath) and os.path.isdir(dirpath):
             shutil.rmtree(dirpath)
@@ -136,8 +133,7 @@ def main():
     clean()
     format_index()
     format_content(projects_pathlist, "projects", docs_projects_dir)
-    format_content(projects_undergraduate_pathlist, "projects", docs_undergraudate_dir)
-    format_content(projects_masters_pathlist, "projects", docs_masters_dir)
+    format_content(projects_projects_pathlist, "projects", docs_projects_projects_dir)
     format_content(research_pathlist, "research", docs_research_dir)
     format_content(research_phd_pathlist, "research", docs_phd_dir)
     format_content(research_extended_project_pathlist, "research", docs_extended_project_dir)
