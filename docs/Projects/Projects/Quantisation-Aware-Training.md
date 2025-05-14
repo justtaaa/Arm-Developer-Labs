@@ -4,6 +4,7 @@ title: "Quantization-Aware Training for Mobile Deployment: Deploying Lightweight
 sidebar:
   nav: projects
 ---
+# Quantization-Aware Training for Mobile Deployment: Deploying Lightweight Models on Arm  
 
 ## Description  
 
@@ -39,4 +40,4 @@ The project encourages referencing work by contributing **optimized and quantize
 - Standout projects could be internally referred for relevant positions at Arm! 📃  
 - If your submission is approved, you could receive a recognised badge that you can list on your CV and shared on LinkedIn. A great way to stand out from the crowd! 🎓  
 - It's a great way to demonstrate your initiative and commitment to your field.  
-- It offers the opportunity to learn valuable skills that are highly relevant to a successful career at Arm! 🎉  
+- It offers the opportunity to learn valuable skills that are highly relevant to a successful career at Arm! 🎉

@@ -1,3 +1,9 @@
+---
+subjects:
+    - "Web"
+    - "Databases"
+---
+
 # Design a Dashboard that Tracks the Progression of Academic Papers on Computer Science Over Time
 
 ![dashboard](./images/dashboard.png)

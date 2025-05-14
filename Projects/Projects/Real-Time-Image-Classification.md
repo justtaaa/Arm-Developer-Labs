@@ -1,3 +1,10 @@
+---
+subjects:
+    - "ML"
+    - "Performance and Architecture"
+---
+
+
 # Running Real-Time Image Classification on Arm Cortex-M with CMSIS-NN 
 
 ![computer_vision](./images/computer_vision.jpg)

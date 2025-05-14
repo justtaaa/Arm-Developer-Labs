@@ -4,6 +4,7 @@ title: "Adding Windows on Arm Support to the Glasgow Haskell Compiler (GHC)"
 sidebar:
   nav: research
 ---
+# Adding Windows on Arm Support to the Glasgow Haskell Compiler (GHC)
 <img class="image image--xl" src="./images/Learn_on_Arm_banner.png"/>
 
 
@@ -53,4 +54,4 @@ The work has potential for real-world deployment and academic publishing, and wo
 - Standout projects could be internally referred for relevant positions at Arm! 📃  
 - If your submission is approved, you could receive a recognised badge that you can list on your CV and share on LinkedIn. A great way to stand out from the crowd! 🎓  
 - It's a great way to demonstrate your initiative and commitment to your field.  
-- It offers the opportunity to learn valuable skills that are highly relevant to a successful career at Arm! 🎉  
+- It offers the opportunity to learn valuable skills that are highly relevant to a successful career at Arm! 🎉

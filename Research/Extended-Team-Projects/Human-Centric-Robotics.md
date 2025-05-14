@@ -1,3 +1,9 @@
+---
+subjects:
+    - "ML"
+    - "Embedded Linux"
+---
+
 # Human-Centric Robotics – Urban Deployment & Socioeconomic Modelling
 
 ![research_on_arm](../../images/Research_on_arm_banner.png)

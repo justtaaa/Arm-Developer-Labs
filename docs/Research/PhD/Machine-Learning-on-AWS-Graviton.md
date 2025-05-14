@@ -4,6 +4,7 @@ title: "Efficient Inference of Vision Transformers on AWS Graviton Instances"
 sidebar:
   nav: research
 ---
+# Efficient Inference of Vision Transformers on AWS Graviton Instances
 
 ## Description
 

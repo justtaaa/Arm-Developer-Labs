@@ -4,6 +4,7 @@ title: "AMBA Infrastructure Design and Simulation Framework"
 sidebar:
   nav: projects
 ---
+# AMBA Infrastructure Design and Simulation Framework
 
 <img class="image image--xl" src="./images/AMBA.avif"/>
 

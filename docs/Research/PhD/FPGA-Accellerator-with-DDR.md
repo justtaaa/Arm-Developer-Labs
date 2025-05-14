@@ -4,6 +4,7 @@ title: "Linux Capable SoC FPGA Prototyping Platform with DDR Memory"
 sidebar:
   nav: research
 ---
+# Linux Capable SoC FPGA Prototyping Platform with DDR Memory 
 ![supporting image]()
 
 

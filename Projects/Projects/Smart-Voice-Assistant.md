@@ -1,3 +1,9 @@
+---
+subjects:
+    - "ML"
+    - "Embedded Linux"
+---
+
 # Smart Voice Assistant Using TinyML on Cortex-M55
 
 ![educate_on_arm](../../images/Educate_on_Arm_banner.png)

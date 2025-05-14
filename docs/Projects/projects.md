@@ -1,6 +1,6 @@
 ---
 layout: article
-title: ""
+title: "Untitled"
 sidebar:
   nav: projects
 ---

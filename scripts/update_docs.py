@@ -87,33 +87,41 @@ def convert_md(md_text: str) -> str:
 
     return replaced_md
 
+from pathlib import Path
+import os
+import frontmatter
+
 def format_content(pathlist, academic_level, docs_path):
     for path in pathlist:
-        path_in_str = str(path)
-        
-        if "README.md" in path_in_str:
+        path = Path(path)
+        if path.name == "README.md":
             continue
-        
-        with open(path_in_str, 'r', encoding='utf-8') as f:
-            content_title = f.readline()[2:].replace("\n", " ").strip()
-            content_level = academic_level
-            content = f.read()
-            
-            formatted_frontmatter = contents_frontmatter.format(
-                title=content_title,
-                level=content_level
-            )
-            formatted_content = formatted_frontmatter + content
-            
-            converted_content = convert_md_images_to_html(
-                formatted_content,
-                path,
-                docs_path
-            )
-            
-            out_file = os.path.join(docs_path, path.name)
-            with open(out_file, 'w', encoding='utf-8') as out_f:
-                out_f.write(converted_content)
+
+        raw_text = path.read_text(encoding="utf-8")
+        post = frontmatter.loads(raw_text)
+        body = post.content
+
+        first_line = body.lstrip().splitlines()[0] if body else ""
+        if first_line.startswith("#"):
+            content_title = first_line.lstrip("#").strip()
+        else:
+            content_title = post.metadata.get("title", "Untitled")
+
+        formatted_frontmatter = contents_frontmatter.format(
+            title=content_title,
+            level=academic_level,
+        )
+        formatted_content = formatted_frontmatter + body
+
+        converted_content = convert_md_images_to_html(
+            formatted_content,
+            path,
+            docs_path,
+        )
+
+        out_file = Path(docs_path, path.name)
+        out_file.write_text(converted_content, encoding="utf-8")
+
         
 def format_index():
     src = "../README.md"

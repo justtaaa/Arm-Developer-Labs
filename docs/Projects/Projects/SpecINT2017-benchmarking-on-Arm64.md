@@ -4,6 +4,7 @@ title: "SpecINT2017 Benchmarking on Arm64: Evaluating Compiler and Workload Perf
 sidebar:
   nav: projects
 ---
+# SpecINT2017 Benchmarking on Arm64: Evaluating Compiler and Workload Performance
 
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 

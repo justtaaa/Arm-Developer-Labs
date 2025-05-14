@@ -1,3 +1,9 @@
+---
+subjects:
+    - "Virtual Hardware"
+    - "Performance and Architecture"
+---
+
 # Linux Capable SoC FPGA Prototyping Platform with DDR Memory 
 ![supporting image]()
 

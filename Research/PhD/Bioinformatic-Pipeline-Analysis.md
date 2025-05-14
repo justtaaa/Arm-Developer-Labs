@@ -1,3 +1,9 @@
+---
+subjects:
+    - "Performance and Architecture"
+    - "Databases"
+---
+
 # Benchmarking Bioconda Packages for Arm64 in Bioinformatics Pipelines
 
 ![research_on_arm](../../images/Research_on_arm_banner.png)

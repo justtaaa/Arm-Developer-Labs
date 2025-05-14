@@ -1,3 +1,9 @@
+---
+subjects:
+    - "Libraries"
+    - "Web"
+---
+
 # Write an Educational Tutorial (Learning Path) of your Choice
 
 ![teach_on_arm](../../images/Educate_on_Arm_banner.png)

@@ -4,6 +4,7 @@ title: "Create a Sentiment Analysis Dashboard for Keywords Based on the Semicond
 sidebar:
   nav: projects
 ---
+# Create a Sentiment Analysis Dashboard for Keywords Based on the Semiconductor Industry
 
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 

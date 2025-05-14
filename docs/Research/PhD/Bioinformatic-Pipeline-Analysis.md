@@ -4,6 +4,7 @@ title: "Benchmarking Bioconda Packages for Arm64 in Bioinformatics Pipelines"
 sidebar:
   nav: research
 ---
+# Benchmarking Bioconda Packages for Arm64 in Bioinformatics Pipelines
 
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 
@@ -59,7 +60,3 @@ AWS Graviton documentation
 3. Problem-Solving Experience: Opportunity to debug and optimize bioinformatics software for emerging computing architectures.
 
 4. Industry Relevance: Hands-on experience with Arm-based architectures, applicable to genomics research and cloud computing.  :tada:
-
-
-
-

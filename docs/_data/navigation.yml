@@ -11,76 +11,122 @@ header:
       # @end locale config
     url: Research/research.html
 projects:
-  - title: Projects
-    children:
-      - title: Academic-Trends-Dashboard
-        url: /Projects/Projects/Academic-Trends-Dashboard.html
-        subjects: ["Data Visualization", "Web"]
-      - title: AMBA-Simulator-Framework
-        url: /Projects/Projects/AMBA-Simulator-Framework.html
-        subjects: ["Embedded Systems", "Performance and Architecture"]
-      - title: Processor-in-the-Loop-Automotive
-        url: /Projects/Projects/Processor-in-the-Loop-Automotive.html
-        subjects: ["Automotive", "Embedded Systems"]
-      - title: Real-Time-Image-Classification
-        url: /Projects/Projects/Real-Time-Image-Classification.html
-        subjects: ["Machine Learning", "Computer Vision"]
-      - title: Sentiment-Analysis-Dashboard
-        url: /Projects/Projects/Sentiment-Analysis-Dashboard.html
-        subjects: ["Machine Learning", "Natural Language Processing", "Web"]
-      - title: Smart-Voice-Assistant
-        url: /Projects/Projects/Smart-Voice-Assistant.html
-        subjects: ["Machine Learning", "Natural Language Processing", "Cloud"]
-      - title: Write-A-Learning-Path
-        url: /Projects/Projects/Write-A-Learning-Path.html
-        subjects: ["Documentation", "Developer Tools"]
-      - title: AI-Agents
-        url: /Projects/Projects/AI-Agents.html
-        subjects: ["Machine Learning", "Robotics"]
-      - title: AI-Powered-Porting-Tool
-        url: /Projects/Projects/AI-Powered-Porting-Tool.html
-        subjects: ["Machine Learning", "CI-CD", "Cloud"]
-      - title: Architecture-Insight-Dashboard
-        url: /Projects/Projects/Architecture-Insight-Dashboard.html
-        subjects: ["Performance and Architecture", "Data Visualization"]
-      - title: Arduino-IDE-Windows-on-Arm
-        url: /Projects/Projects/Arduino-IDE-Windows-on-Arm.html
-        subjects: ["Embedded Systems", "Developer Tools"]
-      - title: LLM-Benchmark-on-Arm-Server
-        url: /Projects/Projects/LLM-Benchmark-on-Arm-Server.html
-        subjects: ["Machine Learning", "Performance and Architecture"]
-      - title: Quantisation-Aware-Training
-        url: /Projects/Projects/Quantisation-Aware-Training.html
-        subjects: ["Machine Learning", "Optimization"]
-      - title: SpecINT2017-benchmarking-on-Arm64
-        url: /Projects/Projects/SpecINT2017-benchmarking-on-Arm64.html
-        subjects: ["Performance and Architecture", "Benchmarking"]
+- title: Projects
+  children:
+  - title: Academic-Trends-Dashboard
+    url: /Projects/Projects/Academic-Trends-Dashboard.html
+    subjects:
+    - Web
+    - Databases
+  - title: AI-Agents
+    url: /Projects/Projects/AI-Agents.html
+    subjects:
+    - ML
+  - title: AI-Powered-Porting-Tool
+    url: /Projects/Projects/AI-Powered-Porting-Tool.html
+    subjects:
+    - CI-CD
+    - ML
+    - Migration to Arm
+  - title: AMBA-Simulator-Framework
+    url: /Projects/Projects/AMBA-Simulator-Framework.html
+    subjects:
+    - Virtual Hardware
+    - Performance and Architecture
+  - title: Architecture-Insight-Dashboard
+    url: /Projects/Projects/Architecture-Insight-Dashboard.html
+    subjects:
+    - Performance and Architecture
+    - Web
+  - title: Arduino-IDE-Windows-on-Arm
+    url: /Projects/Projects/Arduino-IDE-Windows-on-Arm.html
+    subjects:
+    - Migration to Arm
+    - Libraries
+  - title: LLM-Benchmark-on-Arm-Server
+    url: /Projects/Projects/LLM-Benchmark-on-Arm-Server.html
+    subjects:
+    - ML
+    - Performance and Architecture
+    - Migration to Arm
+  - title: Processor-in-the-Loop-Automotive
+    url: /Projects/Projects/Processor-in-the-Loop-Automotive.html
+    subjects:
+    - Embedded Linux
+    - RTOS Fundamentals
+  - title: Quantisation-Aware-Training
+    url: /Projects/Projects/Quantisation-Aware-Training.html
+    subjects:
+    - ML
+    - Performance and Architecture
+  - title: Real-Time-Image-Classification
+    url: /Projects/Projects/Real-Time-Image-Classification.html
+    subjects:
+    - ML
+    - Performance and Architecture
+  - title: Sentiment-Analysis-Dashboard
+    url: /Projects/Projects/Sentiment-Analysis-Dashboard.html
+    subjects:
+    - ML
+    - Web
+  - title: Smart-Voice-Assistant
+    url: /Projects/Projects/Smart-Voice-Assistant.html
+    subjects:
+    - ML
+    - Embedded Linux
+  - title: SpecINT2017-benchmarking-on-Arm64
+    url: /Projects/Projects/SpecINT2017-benchmarking-on-Arm64.html
+    subjects:
+    - Performance and Architecture
+    - Migration to Arm
+  - title: Write-A-Learning-Path
+    url: /Projects/Projects/Write-A-Learning-Path.html
+    subjects:
+    - Libraries
+    - Web
 research:
-  - title: PhD
-    children:
-      - title: Bioinformatic-Pipeline-Analysis
-        url: /Research/PhD/Bioinformatic-Pipeline-Analysis.html
-        subjects: ["Bioinformatics", "Data Science"]
-      - title: FPGA-Accellerator-with-DDR
-        url: /Research/PhD/FPGA-Accellerator-with-DDR.html
-        subjects: ["Hardware Acceleration", "Embedded Systems"]
-      - title: Haskell-Compiler-Windows-on-Arm
-        url: /Research/PhD/Haskell-Compiler-Windows-on-Arm.html
-        subjects: ["Compilers", "Developer Tools"]
-      - title: HPC-Algorithm
-        url: /Research/PhD/HPC-Algorithm.html
-        subjects: ["High Performance Computing", "Performance and Architecture"]
-      - title: Machine-Learning-on-AWS-Graviton
-        url: /Research/PhD/Machine-Learning-on-AWS-Graviton.html
-        subjects: ["Machine Learning", "Cloud Computing"]
-      - title: R-Arm-Community-Support
-        url: /Research/PhD/R-Arm-Community-Support.html
-        subjects: ["Community", "Data Science"]
-  - title: Extended Team Projects
-    children:
-      - title: Compliance-Ready-Smart-Camera-System
-        url: /Research/Extended-Team-Projects/Compliance-Ready-Smart-Camera-System.html
-        subjects: ["Security", "Embedded Systems"]
-      - title: Human-Centric-Robotics
-        url: /Research/Extended-Team-Projects/Human-Centric-Robotics.html
-        subjects: ["Robotics", "Machine Learning"]
+- title: PhD
+  children:
+  - title: Bioinformatic-Pipeline-Analysis
+    url: /Research/PhD/Bioinformatic-Pipeline-Analysis.html
+    subjects:
+    - Performance and Architecture
+    - Databases
+  - title: FPGA-Accellerator-with-DDR
+    url: /Research/PhD/FPGA-Accellerator-with-DDR.html
+    subjects:
+    - Virtual Hardware
+    - Performance and Architecture
+  - title: Haskell-Compiler-Windows-on-Arm
+    url: /Research/PhD/Haskell-Compiler-Windows-on-Arm.html
+    subjects:
+    - Migration to Arm
+    - Performance and Architecture
+  - title: HPC-Algorithm
+    url: /Research/PhD/HPC-Algorithm.html
+    subjects:
+    - Performance and Architecture
+  - title: Machine-Learning-on-AWS-Graviton
+    url: /Research/PhD/Machine-Learning-on-AWS-Graviton.html
+    subjects:
+    - ML
+    - Migration to Arm
+    - Performance and Architecture
+  - title: R-Arm-Community-Support
+    url: /Research/PhD/R-Arm-Community-Support.html
+    subjects:
+    - Migration to Arm
+    - Libraries
+  - title: Compliance-Ready-Smart-Camera-System
+    url: /Research/Extended-Team-Projects/Compliance-Ready-Smart-Camera-System.html
+    subjects:
+    - Security
+    - Embedded Linux
+    - ML
+  - title: Human-Centric-Robotics
+    url: /Research/Extended-Team-Projects/Human-Centric-Robotics.html
+    subjects:
+    - ML
+    - Embedded Linux
+- title: Extended Team Projects
+  children: []

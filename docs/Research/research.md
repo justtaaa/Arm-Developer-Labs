@@ -4,6 +4,7 @@ title: "Research that Matters"
 sidebar:
   nav: research
 ---
+# Research that Matters
 
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 

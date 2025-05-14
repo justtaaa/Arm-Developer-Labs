@@ -4,6 +4,7 @@ title: "Running Real-Time Image Classification on Arm Cortex-M with CMSIS-NN"
 sidebar:
   nav: projects
 ---
+# Running Real-Time Image Classification on Arm Cortex-M with CMSIS-NN 
 
 <img class="image image--xl" src="./images/computer_vision.jpg"/>
 

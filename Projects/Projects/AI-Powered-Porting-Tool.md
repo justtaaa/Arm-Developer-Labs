@@ -1,3 +1,10 @@
+---
+subjects:
+    - "CI-CD"
+    - "ML"
+    - "Migration to Arm"
+---
+
 # AI-Powered Package Porting Tool for the Arm Architectures
 
 ![research_on_arm](../../images/Research_on_arm_banner.png)
