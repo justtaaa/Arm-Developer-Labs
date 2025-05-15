@@ -14,12 +14,13 @@
 
 .provided-by-title {
   text-align: center;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: $text-color-theme-light; // #222 (matches your header style)
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  font-weight: 700;         /* Bold */
+  font-size: 24px;          /* Matches the header size visually */
+  color: #222222;           /* Same as $text-color-theme-light */
+  margin-top: 32px;         /* Add breathing room from above section */
+  margin-bottom: 16px;      /* Space before the logo scroll starts */
 }
+
 
 .scroll-container {
   position: relative;

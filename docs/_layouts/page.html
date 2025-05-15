@@ -171,8 +171,8 @@ layout: base
             {%- if page.article_header.image.src -%}
               {%- include snippets/get-nav-url.html path=page.article_header.image.src -%}
               {%- assign _header_image_src = __return -%}
-              <div class="provided-by-title">Projects are provided by...</div>
               <img class="crop_image--cover" src="{{ _header_image_src }}" />
+              <div class="provided-by-title">Projects are provided by...</div>
               <div class="scroll-container">
                 <div class="carousel">
                   <img src="partner_logos/R_logo.png" alt="R"/>
