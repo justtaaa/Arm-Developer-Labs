@@ -1,12 +1,11 @@
 ---
 layout: article
-title: "None"
+title: "Arm-based Design Contests!"
 sidebar:
   nav: projects
 ---
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 
-## Arm-based Design Contests!
 
 Welcome to the ultimate hub for design contests and hackathons centered around Arm technologies! Our platform is dedicated to showcasing the most innovative and exciting competitions that push the boundaries of what's possible with Arm's cutting-edge solutions. Whether you're a seasoned developer or a newcomer eager to dive into the world of Arm, you'll find a wealth of opportunities to challenge yourself and showcase your skills.
 
