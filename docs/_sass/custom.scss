@@ -12,6 +12,15 @@
   object-fit: cover;
 }
 
+.provided-by-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: $text-color-theme-light; // #222 (matches your header style)
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .scroll-container {
   position: relative;
   height: 14vh;
