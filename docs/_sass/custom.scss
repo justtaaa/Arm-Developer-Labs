@@ -13,12 +13,14 @@
 }
 
 .provided-by-title {
+  font-family: 'Inter', sans-serif; /* or whatever your site uses */
+  font-weight: 800;                 /* same as the big title */
+  font-size: 32px;                  /* match headline size */
+  color: #000000;                   /* from $text-color-theme-light-d */
+  line-height: 1.2;
   text-align: center;
-  font-weight: 700;         /* Bold */
-  font-size: 24px;          /* Matches the header size visually */
-  color: #222222;           /* Same as $text-color-theme-light */
-  margin-top: 32px;         /* Add breathing room from above section */
-  margin-bottom: 16px;      /* Space before the logo scroll starts */
+  margin-top: 40px;
+  margin-bottom: 24px;
 }
 
 
