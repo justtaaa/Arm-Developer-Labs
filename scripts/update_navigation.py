@@ -38,7 +38,7 @@ def process_yml(pathlist, level: str, tab: str):
             with open(navigation, 'w') as f:
                 f.write(''.join(header))
                 f.write(new_yaml_text)
-        else:
+        elif level == 'extended-team-project':
             yam_tab[tab][1]['children'].clear()
         
             for path in pathlist:
@@ -46,7 +46,7 @@ def process_yml(pathlist, level: str, tab: str):
                 title = path_in_str.rsplit('/')[-1].replace(".html", "")
                 post = frontmatter.load(path)  
                 subjects = post.metadata.get("subjects")
-                yam_tab[tab][0]['children'].append({'title': title, 'url': path_in_str, 'subjects': subjects})
+                yam_tab[tab][1]['children'].append({'title': title, 'url': path_in_str, 'subjects': subjects})
             
             new_yaml_text = yaml.safe_dump(yam_tab, sort_keys=False)
             
