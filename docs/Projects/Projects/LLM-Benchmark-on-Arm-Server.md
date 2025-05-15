@@ -4,8 +4,6 @@ title: "LLM Benchmark for Arm Server"
 sidebar:
   nav: projects
 ---
-# LLM Benchmark for Arm Server 
-
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 
 ## Description

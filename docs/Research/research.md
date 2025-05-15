@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Research that Matters"
+title: "None"
 sidebar:
   nav: research
 ---

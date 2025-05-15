@@ -4,8 +4,6 @@ title: "Human-Centric Robotics – Urban Deployment & Socioeconomic Modelling"
 sidebar:
   nav: research
 ---
-# Human-Centric Robotics – Urban Deployment & Socioeconomic Modelling
-
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 
 ### Project Difficulty

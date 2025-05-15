@@ -4,8 +4,6 @@ title: "Quantization-Aware Training for Mobile Deployment: Deploying Lightweight
 sidebar:
   nav: projects
 ---
-# Quantization-Aware Training for Mobile Deployment: Deploying Lightweight Models on Arm  
-
 ## Description  
 
 This open-ended project invites students to explore **Quantization-Aware Training (QAT)** with PyTorch to optimize computer vision models for **Arm-based mobile devices** (e.g., Android smartphones).

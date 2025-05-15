@@ -4,7 +4,6 @@ title: "Develop an Arm Architecture Insight Dashboard"
 sidebar:
   nav: projects
 ---
-# Develop an Arm Architecture Insight Dashboard
 <img class="image image--xl" src="./images/can-i-use.jpg"/>
 
 

@@ -1,10 +1,9 @@
 ---
+title: "Processor-in-the-Loop for an Automotive Control System"
 subjects:
     - "Embedded Linux"
     - "RTOS Fundamentals"
 ---
-
-# Processor-in-the-Loop for an Automotive Control System
 
 ![matlab](./images/mathworks.png)
 

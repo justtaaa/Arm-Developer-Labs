@@ -4,8 +4,6 @@ title: "AI-Powered Package Porting Tool for the Arm Architectures"
 sidebar:
   nav: projects
 ---
-# AI-Powered Package Porting Tool for the Arm Architectures
-
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 
 ## Description

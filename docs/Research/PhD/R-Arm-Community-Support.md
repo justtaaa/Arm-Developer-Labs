@@ -4,7 +4,6 @@ title: "Improving R Support for the Windows on Arm Community"
 sidebar:
   nav: research
 ---
-# Improving R Support for the Windows on Arm Community 
 <img class="image image--xl" src="./images/Learn_on_Arm_banner.png"/>
 
 

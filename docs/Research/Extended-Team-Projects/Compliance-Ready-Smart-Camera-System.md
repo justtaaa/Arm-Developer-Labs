@@ -4,8 +4,6 @@ title: "End-to-End Computer Vision System for Functional Safety"
 sidebar:
   nav: research
 ---
-# End-to-End Computer Vision System for Functional Safety 
-
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 
 ### Project Difficulty  

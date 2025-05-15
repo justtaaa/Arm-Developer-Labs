@@ -2,6 +2,7 @@ import os
 import re
 import shutil
 from pathlib import Path
+import frontmatter
 
 projects_dir = "../Projects/Projects"
 research_phd_dir = "../Research/PhD"
@@ -34,7 +35,7 @@ tags: TeXt
 article_header:
   type: cover
   image:
-    src: ./images/DeveloperLabs_Header.png
+    src: ./images/DevLabs_Header.svg
 ---
 """
 
@@ -54,7 +55,7 @@ def convert_md_images_to_html(md_text: str, doc_path: Path, docs_dir: str) -> st
     def replace(match):
         img_path = match.group(1)
 
-        if doc_path.resolve() == Path("../README.md").resolve() and img_path == "./images/DeveloperLabs_Header.png":
+        if doc_path.resolve() == Path("../README.md").resolve() and img_path == "./images/DevLabs_Header.svg":
             return ""
         
         source_path = (doc_path.parent / img_path).resolve()
@@ -87,10 +88,6 @@ def convert_md(md_text: str) -> str:
 
     return replaced_md
 
-from pathlib import Path
-import os
-import frontmatter
-
 def format_content(pathlist, academic_level, docs_path):
     for path in pathlist:
         path = Path(path)
@@ -101,11 +98,7 @@ def format_content(pathlist, academic_level, docs_path):
         post = frontmatter.loads(raw_text)
         body = post.content
 
-        first_line = body.lstrip().splitlines()[0] if body else ""
-        if first_line.startswith("#"):
-            content_title = first_line.lstrip("#").strip()
-        else:
-            content_title = post.metadata.get("title", "Untitled")
+        content_title = post.metadata.get("title")
 
         formatted_frontmatter = contents_frontmatter.format(
             title=content_title,

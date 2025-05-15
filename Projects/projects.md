@@ -1,4 +1,3 @@
-
 ![research_banner](../images/Research_on_arm_banner.png)
 
 ## Arm-based Design Contests!
