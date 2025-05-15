@@ -35,7 +35,7 @@ tags: TeXt
 article_header:
   type: cover
   image:
-    src: ./images/DevLabs_Header.svg
+    src: ./images/DeveloperLabs_Header.png
 ---
 """
 
@@ -55,7 +55,7 @@ def convert_md_images_to_html(md_text: str, doc_path: Path, docs_dir: str) -> st
     def replace(match):
         img_path = match.group(1)
 
-        if doc_path.resolve() == Path("../README.md").resolve() and img_path == "./images/DevLabs_Header.svg":
+        if doc_path.resolve() == Path("../README.md").resolve() and img_path == "./images/DeveloperLabs_Header.png":
             return ""
         
         source_path = (doc_path.parent / img_path).resolve()

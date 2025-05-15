@@ -1,6 +1,6 @@
 # Arm Developer Labs
 
-![banner](./images/DevLabs_Header.svg)
+![banner](./images/DeveloperLabs_Header.png)
 
 Welcome to our collection of industry-focused software challenges. This repository features a diverse set of problems designed for students and developers alike. If you're looking to work at Arm, explore financially-sponsored challenges or learn new skills - this is your opportunity! 
 
