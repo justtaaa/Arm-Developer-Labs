@@ -1,10 +1,9 @@
 ---
+title: "Quantization-Aware Training for Mobile Deployment: Deploying Lightweight Models on Arm"
 subjects:
     - "ML"
     - "Performance and Architecture"
 ---
-
-# Quantization-Aware Training for Mobile Deployment: Deploying Lightweight Models on Arm  
 
 ## Description  
 

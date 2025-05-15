@@ -2,6 +2,7 @@ import os
 import re
 import shutil
 from pathlib import Path
+import frontmatter
 
 projects_dir = "../Projects/Projects"
 research_phd_dir = "../Research/PhD"
@@ -101,11 +102,7 @@ def format_content(pathlist, academic_level, docs_path):
         post = frontmatter.loads(raw_text)
         body = post.content
 
-        first_line = body.lstrip().splitlines()[0] if body else ""
-        if first_line.startswith("#"):
-            content_title = first_line.lstrip("#").strip()
-        else:
-            content_title = post.metadata.get("title", "Untitled")
+        content_title = post.metadata.get("title")
 
         formatted_frontmatter = contents_frontmatter.format(
             title=content_title,

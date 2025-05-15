@@ -4,8 +4,6 @@ title: "Efficient Inference of Vision Transformers on AWS Graviton Instances"
 sidebar:
   nav: research
 ---
-# Efficient Inference of Vision Transformers on AWS Graviton Instances
-
 ## Description
 
 This project investigates the deployment and optimization of Vision Transformer (ViT) models on Arm-based AWS Graviton instances, leveraging CPU-only execution for cost-effective and scalable inference. Vision Transformers, though typically run on GPUs, are increasingly required to operate in resource-constrained environments or as part of serverless and CPU-bound cloud services. 

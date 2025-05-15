@@ -1,10 +1,9 @@
 ---
+title: "Create a Sentiment Analysis Dashboard for Keywords Based on the Semiconductor Industry"
 subjects:
     - "ML"
     - "Web"
 ---
-
-# Create a Sentiment Analysis Dashboard for Keywords Based on the Semiconductor Industry
 
 ![research_on_arm](../../images/Research_on_arm_banner.png)
 

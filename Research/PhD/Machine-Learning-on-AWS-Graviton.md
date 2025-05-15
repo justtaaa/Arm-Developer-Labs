@@ -1,11 +1,10 @@
 ---
+title: "Efficient Inference of Vision Transformers on AWS Graviton Instances"
 subjects:
     - "ML"
     - "Migration to Arm"
     - "Performance and Architecture"
 ---
-
-# Efficient Inference of Vision Transformers on AWS Graviton Instances
 
 ## Description
 

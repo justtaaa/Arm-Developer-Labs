@@ -4,8 +4,6 @@ title: "AI-Powered Workflow Agent in a Sandboxed Environment"
 sidebar:
   nav: projects
 ---
-# AI-Powered Workflow Agent in a Sandboxed Environment
-
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 
 

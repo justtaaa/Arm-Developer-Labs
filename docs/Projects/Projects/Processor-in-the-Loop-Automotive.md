@@ -4,8 +4,6 @@ title: "Processor-in-the-Loop for an Automotive Control System"
 sidebar:
   nav: projects
 ---
-# Processor-in-the-Loop for an Automotive Control System
-
 <img class="image image--xl" src="./images/mathworks.png"/>
 
 ## Description

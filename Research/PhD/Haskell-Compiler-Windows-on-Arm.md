@@ -1,10 +1,10 @@
 ---
+title: "Adding Windows on Arm Support to the Glasgow Haskell Compiler (GHC)"
 subjects:
     - "Migration to Arm"
     - "Performance and Architecture"
 ---
 
-# Adding Windows on Arm Support to the Glasgow Haskell Compiler (GHC)
 ![learn_on_arm](../../images/Learn_on_Arm_banner.png)
 
 

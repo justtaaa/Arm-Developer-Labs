@@ -1,10 +1,9 @@
 ---
+title: "AMBA Infrastructure Design and Simulation Framework"
 subjects:
     - "Virtual Hardware"
     - "Performance and Architecture"
 ---
-
-# AMBA Infrastructure Design and Simulation Framework
 
 ![amba](./images/AMBA.avif)
 

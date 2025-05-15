@@ -4,8 +4,6 @@ title: "Optimise Performance of an Algorithm Used in High-Performance Compute Us
 sidebar:
   nav: research
 ---
-# Optimise Performance of an Algorithm Used in High-Performance Compute Using Scalable Vector Extensions (SVE / SVE2) 
-
 <img class="image image--xl" src="./images/Research_on_arm_banner.png"/>
 
 

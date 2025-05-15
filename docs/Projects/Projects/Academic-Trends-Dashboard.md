@@ -4,8 +4,6 @@ title: "Design a Dashboard that Tracks the Progression of Academic Papers on Com
 sidebar:
   nav: projects
 ---
-# Design a Dashboard that Tracks the Progression of Academic Papers on Computer Science Over Time
-
 <img class="image image--xl" src="./images/dashboard.png"/>
 
 ## Description

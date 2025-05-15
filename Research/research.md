@@ -1,4 +1,6 @@
-# Research that Matters
+---
+title: "Research that Matters"
+---
 
 ![research](../images/Research_on_arm_banner.png)
 
