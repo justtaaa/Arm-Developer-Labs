@@ -68,7 +68,7 @@
       $searchInput.on('blur', function() {
         $(this).removeClass('focus');
       });
-      $searchInput.on('input', window.throttle(function() {
+      $searchInput.on('input', window.throttle(function () {
         var val = $(this).val();
         if (val === '' || typeof val !== 'string') {
           search.clear && search.clear();
@@ -77,10 +77,29 @@
           search.onInputNotEmpty && search.onInputNotEmpty(val);
         }
       }, 400));
-      $searchClear.on('click', function() {
-        $searchInput.val(''); $searchBox.removeClass('not-empty');
+
+      $searchClear.on('click', function () {
+        $searchInput.val('');
+        $searchBox.removeClass('not-empty');
         search.clear && search.clear();
       });
     }
+
+    search.onInputNotEmpty = function (val) {
+      var data = window.TEXT_SEARCH_DATA;
+      var results = [];
+      val = val.toLowerCase();
+
+      Object.keys(data).forEach(function (section) {
+        data[section].forEach(function (item) {
+          var titleMatch = item.title && item.title.toLowerCase().includes(val);
+          var contentMatch = item.content && item.content.toLowerCase().includes(val);
+          if (titleMatch || contentMatch) {
+            results.push(item);
+          }
+        });
+      });
+    };
   });
+  
 })();
