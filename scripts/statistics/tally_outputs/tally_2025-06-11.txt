@@ -1,0 +1,46 @@
+Key: subjects
+  'Performance and Architecture': 13
+  'ML': 11
+  'Migration to Arm': 6
+  'Web': 4
+  'Virtual Hardware': 4
+  'Databases': 3
+  'Libraries': 3
+  'Embedded Linux': 3
+  'RTOS Fundamentals': 2
+  'CI-CD': 1
+  'Security': 1
+
+Key: requires-team
+  'No': 21
+  'Yes': 2
+
+Key: platform
+  'Laptops and Desktops': 16
+  'AI': 16
+  'Servers and Cloud Computing': 14
+  'Embedded and Microcontrollers': 8
+  'Mobile, Graphics, and Gaming': 7
+  'IoT': 6
+  'Automotive': 4
+
+Key: sw-hw
+  'Software': 21
+  'Hardware': 11
+
+Key: support-level
+  'Self-Service': 23
+  'Arm Ambassador Support': 23
+  'Direct Support from Arm': 2
+
+Key: publication-date
+  '2025-05-30': 23
+
+Key: license
+  'None': 23
+
+Key: status
+  'Published': 12
+  'Draft': 6
+  'Hidden': 5
+

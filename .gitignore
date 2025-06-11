@@ -4,3 +4,4 @@
 /scripts/.venv
 .pytest_cache
 __pycache__
+/scripts/statistics/.venv
