@@ -84,22 +84,20 @@
     }
 
     search.onInputNotEmpty = function (val) {
-      var data = window.TEXT_SEARCH_DATA;
-      var result = [];
-      val = val.toLowerCase();
+    const q = val.trim().toLowerCase();
+    const hits = [];
 
-      Object.keys(data).forEach(function (section) {
-        data[section].forEach(function (item) {
-          var titleMatch = item.title && item.title.toLowerCase().includes(val);
-          var contentMatch = item.content && item.content.toLowerCase().includes(val);
-          if (titleMatch || contentMatch) {
-            result.push(item);
-          }
-        });
+    for (const section in window.TEXT_SEARCH_DATA) {
+      window.TEXT_SEARCH_DATA[section].forEach(item => {
+        const inTitle   = item.title   && item.title.toLowerCase().includes(q);
+        const inContent = item.content && item.content.toLowerCase().includes(q);
+        if (inTitle || inContent) hits.push(item);
       });
+    }
 
-      renderSearchResults(result, val);
-    };
+    renderSearchResults(hits, q);
+  };
+
 
     search.clear = function () {
       $('.js-search-result').empty();
