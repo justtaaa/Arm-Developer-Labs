@@ -1,11 +1,8 @@
-
 (function () {
   var SOURCES = window.TEXT_VARIABLES.sources;
   window.Lazyload.js(SOURCES.jquery, function() {
-    // search panel
     var search = (window.search || (window.search = {}));
-    var useDefaultSearchBox = window.useDefaultSearchBox === undefined ?
-      true : window.useDefaultSearchBox ;
+    var useDefaultSearchBox = window.useDefaultSearchBox === undefined ? true : window.useDefaultSearchBox;
 
     var $searchModal = $('.js-page-search-modal');
     var $searchToggle = $('.js-search-toggle');
@@ -41,10 +38,10 @@
     $searchToggle.on('click', function() {
       modalVisible ? searchModal.hide() : searchModal.show();
     });
-    // Char Code: 83  S, 191 /
+
     $(window).on('keyup', function(e) {
       if (!modalVisible && !window.isFormElement(e.target || e.srcElement) && (e.which === 83 || e.which === 191)) {
-        modalVisible || searchModal.show();
+        searchModal.show();
       }
     });
 
@@ -52,6 +49,7 @@
       $searchBox = $('.js-search-box');
       $searchInput = $searchBox.children('input');
       $searchClear = $searchBox.children('.js-icon-clear');
+
       search.getSearchInput = function() {
         return $searchInput.get(0);
       };
@@ -87,7 +85,7 @@
 
     search.onInputNotEmpty = function (val) {
       var data = window.TEXT_SEARCH_DATA;
-      var results = [];
+      var result = [];
       val = val.toLowerCase();
 
       Object.keys(data).forEach(function (section) {
@@ -95,11 +93,48 @@
           var titleMatch = item.title && item.title.toLowerCase().includes(val);
           var contentMatch = item.content && item.content.toLowerCase().includes(val);
           if (titleMatch || contentMatch) {
-            results.push(item);
+            result.push(item);
           }
         });
       });
+
+      renderSearchResults(result, val);
     };
+
+    search.clear = function () {
+      $('.js-search-result').empty();
+    };
+
+    function renderSearchResults(results, query) {
+      var $resultsContainer = $('.js-search-result');
+      $resultsContainer.empty();
+
+      if (results.length === 0) {
+        $resultsContainer.append('<div class="search-no-result">No results found.</div>');
+        return;
+      }
+
+      results.forEach(function (item) {
+        const snippet = item.content ? item.content.substring(0, 150) + '...' : '';
+        $resultsContainer.append(`
+          <div class="search-result-item">
+            <a href="${item.url}">
+              <h3>${highlightMatch(item.title, query)}</h3>
+              <p>${highlightMatch(snippet, query)}</p>
+            </a>
+          </div>
+        `);
+      });
+    }
+
+    function highlightMatch(text, query) {
+      if (!text) return '';
+      var regex = new RegExp('(' + escapeRegExp(query) + ')', 'gi');
+      return text.replace(regex, '<mark>$1</mark>');
+    }
+
+    function escapeRegExp(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
   });
-  
 })();
