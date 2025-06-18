@@ -4,6 +4,9 @@
     var search = (window.search || (window.search = {}));
     var useDefaultSearchBox = window.useDefaultSearchBox === undefined ? true : window.useDefaultSearchBox;
 
+    /* --------------------------------------------------
+     *  Modal wiring (unchanged)
+     * --------------------------------------------------*/
     var $searchModal = $('.js-page-search-modal');
     var $searchToggle = $('.js-search-toggle');
     var searchModal = $searchModal.modal({ onChange: handleModalChange, hideWhenWindowScroll: true });
@@ -45,6 +48,9 @@
       }
     });
 
+    /* --------------------------------------------------
+     *  Default in‑modal search box wiring (unchanged)
+     * --------------------------------------------------*/
     if (useDefaultSearchBox) {
       $searchBox = $('.js-search-box');
       $searchInput = $searchBox.children('input');
@@ -83,71 +89,54 @@
       });
     }
 
-    let lunrIndex;
-    let searchStore;
+    /* --------------------------------------------------
+     *  SEARCH LOGIC (title + content)
+     * --------------------------------------------------*/
+    search.onInputNotEmpty = function (val) {
+      const q = val.trim().toLowerCase();
+      const hits = [];
 
-    fetch('/search.json')
-      .then(response => response.json())
-      .then(data => {
-        searchStore = data;
+      const data = window.TEXT_SEARCH_DATA || {};
 
-        lunrIndex = lunr(function () {
-          this.ref('id');
-          this.field('title', { boost: 10 });
-          this.field('content');
-          this.field('platform');
-          this.field('subjects');
-          this.field('support_level');
-          this.field('sw_hw');
-          this.field('status');
-
-          data.forEach(doc => {
-            this.add(doc);
-          });
+      Object.keys(data).forEach(section => {
+        data[section].forEach(item => {
+          const inTitle   = item.title   && item.title.toLowerCase().includes(q);
+          const inContent = item.content && item.content.toLowerCase().includes(q);
+          if (inTitle || inContent) hits.push(item);
         });
       });
 
-    search.onInputNotEmpty = function (val) {
-      if (!lunrIndex) return;
-      const query = val.trim();
-      const results = lunrIndex.search(query);
-
-      const matches = results.map(r => searchStore.find(p => p.id === r.ref));
-      renderSearchResults(matches, query);
-
+      renderSearchResults(hits, q);
     };
-
-
-
 
     search.clear = function () {
       $('.js-search-result').empty();
     };
 
+    /* --------------------------------------------------
+     *  Rendering helpers
+     * --------------------------------------------------*/
     function renderSearchResults(results, query) {
-      const $resultsContainer = $('.js-search-result');
+      var $resultsContainer = $('.js-search-result');
       $resultsContainer.empty();
 
-      if (!results.length) {
+      if (results.length === 0) {
         $resultsContainer.append('<div class="search-no-result">No results found.</div>');
         return;
       }
 
-      results.forEach(item => {
-        const snippet = item.content.substring(0, 150) + '...';
-        $resultsContainer.append(`
-          <div class="search-result-item">
-            <a href="${item.url}">
-              <h3>${highlightMatch(item.title, query)}</h3>
-              <p>${highlightMatch(snippet, query)}</p>
-              <small><strong>Subjects:</strong> ${item.subjects}</small><br/>
-              <small><strong>Platform:</strong> ${item.platform}</small>
-            </a>
-          </div>
-        `);
+      results.forEach(function (item) {
+        var snippet = item.content ? item.content.substr(0, 150) + '…' : '';
+        $resultsContainer.append(
+          '<div class="search-result-item">' +
+            '<a href="' + item.url + '">' +
+              '<h3>' + highlightMatch(item.title, query) + '</h3>' +
+              '<p>' + highlightMatch(snippet, query) + '</p>' +
+            '</a>' +
+          '</div>'
+        );
       });
     }
-
 
     function highlightMatch(text, query) {
       if (!text) return '';
