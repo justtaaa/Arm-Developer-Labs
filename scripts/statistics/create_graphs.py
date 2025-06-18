@@ -2,9 +2,10 @@ import re
 import os
 import glob
 from collections import OrderedDict
+import itertools
 import matplotlib.pyplot as plt
 
-# Define a consistent color palette for Arm's 2025 branding
+# Define a consistent color palette
 PALETTE = ['#080225',  # deep navy
            '#7233F7',  # vivid purple
            '#0057FF',  # bright blue
@@ -56,7 +57,7 @@ def read_tally(path):
 def plot_tally(tally_data, figsize=(10, 6), rotate_xticks=45):
     """
     Given a tally_data dict from read_tally, creates plots for each key,
-    using a shared color palette.
+    using a shared color palette for both bar and pie charts.
     """
     # Keys to plot as pie charts instead of bar charts
     pie_keys = {'requires-team', 'sw-hw', 'support-level', 'status'}
@@ -64,8 +65,8 @@ def plot_tally(tally_data, figsize=(10, 6), rotate_xticks=45):
     for key, counter in tally_data.items():
         labels = list(counter.keys())
         counts = list(counter.values())
-        # Select colors corresponding to the number of labels
-        colors = PALETTE[:len(labels)] if len(labels) <= len(PALETTE) else None
+        # Generate colors cycling through the palette
+        colors = [PALETTE[i % len(PALETTE)] for i in range(len(labels))]
 
         plt.figure(figsize=figsize)
         if key in pie_keys:

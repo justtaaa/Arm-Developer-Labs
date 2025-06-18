@@ -12,7 +12,7 @@ requires-team:
 sidebar:
   nav: projects
 status:
-- Draft
+- Published
 subjects:
 - Web
 - Databases

@@ -12,7 +12,7 @@ requires-team:
 sidebar:
   nav: projects
 status:
-- Draft
+- Hidden
 subjects:
 - ML
 - Performance and Architecture

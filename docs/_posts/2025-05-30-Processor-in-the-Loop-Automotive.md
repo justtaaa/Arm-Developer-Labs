@@ -11,7 +11,7 @@ requires-team:
 sidebar:
   nav: projects
 status:
-- Draft
+- Published
 subjects:
 - Embedded Linux
 - RTOS Fundamentals

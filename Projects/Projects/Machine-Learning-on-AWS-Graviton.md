@@ -1,5 +1,5 @@
 ---
-title: "Efficient Inference of Vision Transformers on AWS Graviton Instances"
+title: "Efficient Inference of text-to-video (OpenSora) on AWS Graviton Instances"
 subjects:
     - "ML"
     - "Migration to Arm"
@@ -17,24 +17,30 @@ support-level:
 publication-date: 2025-05-30
 license:
 status:
-    - "Draft" 
+    - "Published" 
 license: 
 ---
 
+![open_sora](./images/opensora.png)
+
 ## Description
 
-This project investigates the deployment and optimization of text-to-video transformer models on Arm-based instances, leveraging CPU-only execution for cost-effective and scalable inference. Vision Transformers, though typically run on GPUs, are increasingly required to operate in resource-constrained environments or as part of serverless and CPU-bound cloud services. 
+**Why is this important?**
 
-The aim of this project is to port, benchmark, and optimize a pre-trained ViT model (e.g., OpenSora) on Arm-based instances. Students will explore efficiency techniques such as  INT8 quantization, refactoring of expensive operations, and memory-efficient transformer kernels, and compare results with x86-based instances. Deliverables include a reproducable inference pipeline and a technical report outlining bottlenecks and optimization strategies.
+This project investigates the deployment and optimization of text-to-video transformer models on Arm-based instances, leveraging CPU-only execution for cost-effective and scalable inference. Vision Transformers, though typically run on GPUs, are increasingly desire to operate in resource-constrained environments for power efficiency. 
+
+
+**Project Summary**
+
+The aim of this project is to port, benchmark, and optimize a pre-trained ViT model (e.g., OpenSora) on Arm-based instances. This could include post-training quantization and investigation in how to speed up performance. Students will explore efficiency techniques such as  INT8 quantization, refactoring of expensive operations, and memory-efficient transformer kernels, and compare results across GPU and CPU platforms. Deliverables include a reproducable inference pipeline and a technical report outlining bottlenecks and optimization strategies.
 
 ## Prequisites
 
-- Intemediate understanding of Python; 
-
-- Expeience using PyTorch or ONNX Runtime (CPU execution provider)
+- Intemediate understanding of Python.
+- Understanding of transformer architectures, vision transformer architectures and inference optimization
+- Experience using PyTorch or ONNX Runtime (CPU execution provider)
 - Experience with libraries such as Hugging Face Transformers, torchvision
 - Access to Arm-based instances such as AWS Graviton3/Graviton4 (`c7g`, `m7g`, or `r7g`)
-- Understanding of transformer architectures, vision transformer architectures and inference optimization
 - Familiarity with Linux, Docker, and cloud environments
 
 
