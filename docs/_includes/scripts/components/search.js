@@ -83,20 +83,36 @@
       });
     }
 
-    search.onInputNotEmpty = function (val) {
-    const q = val.trim().toLowerCase();
-    const hits = [];
+    let idx = null;
+    let store = [];
 
-    for (const section in window.TEXT_SEARCH_DATA) {
-      window.TEXT_SEARCH_DATA[section].forEach(item => {
-        const inTitle   = item.title   && item.title.toLowerCase().includes(q);
-        const inContent = item.content && item.content.toLowerCase().includes(q);
-        if (inTitle || inContent) hits.push(item);
+    fetch('/search.json')
+      .then(response => response.json())
+      .then(data => {
+        store = data;
+        idx = lunr(function () {
+          this.ref('url');
+          this.field('title');
+          this.field('content');
+
+          data.forEach(function (doc) {
+            this.add(doc);
+          }, this);
+        });
       });
-    }
 
-    renderSearchResults(hits, q);
-  };
+    search.onInputNotEmpty = function (val) {
+      const query = val.trim();
+      if (!idx || query.length < 2) return;
+
+      const results = idx.search(query);
+      const matchedDocs = results.map(result => {
+        return store.find(p => p.url === result.ref);
+      });
+
+      renderSearchResults(matchedDocs, query);
+    };
+
 
 
     search.clear = function () {

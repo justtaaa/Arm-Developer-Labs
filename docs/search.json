@@ -1,0 +1,14 @@
+---
+layout: null
+---
+
+[
+  {% assign pages = site.pages | concat: site.posts %}
+  {% for page in pages %}
+    {
+      "title": {{ page.title | jsonify }},
+      "content": {{ page.content | markdownify | strip_html | strip_newlines | jsonify }},
+      "url": "{{ page.url | relative_url }}"{% if forloop.last %}{% else %},{% endif %}
+    }
+  {% endfor %}
+]
