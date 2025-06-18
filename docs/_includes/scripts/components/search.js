@@ -83,35 +83,40 @@
       });
     }
 
-    let idx = null;
-    let store = [];
+    let lunrIndex;
+    let searchStore;
 
     fetch('/search.json')
       .then(response => response.json())
       .then(data => {
-        store = data;
-        idx = lunr(function () {
-          this.ref('url');
-          this.field('title');
-          this.field('content');
+        searchStore = data;
 
-          data.forEach(function (doc) {
+        lunrIndex = lunr(function () {
+          this.ref('id');
+          this.field('title', { boost: 10 });
+          this.field('content');
+          this.field('platform');
+          this.field('subjects');
+          this.field('support_level');
+          this.field('sw_hw');
+          this.field('status');
+
+          data.forEach(doc => {
             this.add(doc);
-          }, this);
+          });
         });
       });
 
     search.onInputNotEmpty = function (val) {
+      if (!lunrIndex) return;
       const query = val.trim();
-      if (!idx || query.length < 2) return;
+      const results = lunrIndex.search(query);
 
-      const results = idx.search(query);
-      const matchedDocs = results.map(result => {
-        return store.find(p => p.url === result.ref);
-      });
+      const matches = results.map(r => searchStore.find(p => p.id === r.ref));
+      renderSearchResults(matches, query);
 
-      renderSearchResults(matchedDocs, query);
     };
+
 
 
 
@@ -120,26 +125,29 @@
     };
 
     function renderSearchResults(results, query) {
-      var $resultsContainer = $('.js-search-result');
+      const $resultsContainer = $('.js-search-result');
       $resultsContainer.empty();
 
-      if (results.length === 0) {
+      if (!results.length) {
         $resultsContainer.append('<div class="search-no-result">No results found.</div>');
         return;
       }
 
-      results.forEach(function (item) {
-        const snippet = item.content ? item.content.substring(0, 150) + '...' : '';
+      results.forEach(item => {
+        const snippet = item.content.substring(0, 150) + '...';
         $resultsContainer.append(`
           <div class="search-result-item">
             <a href="${item.url}">
               <h3>${highlightMatch(item.title, query)}</h3>
               <p>${highlightMatch(snippet, query)}</p>
+              <small><strong>Subjects:</strong> ${item.subjects}</small><br/>
+              <small><strong>Platform:</strong> ${item.platform}</small>
             </a>
           </div>
         `);
       });
     }
+
 
     function highlightMatch(text, query) {
       if (!text) return '';
