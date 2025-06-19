@@ -1,25 +1,35 @@
+---
+layout: null
+---
+
+/*  Auto-generated at build time  */
 window.TEXT_SEARCH_DATA = {
-  /* Posts (the default collection) */
+  /* Blog posts */
   posts: [
   {%- for p in site.posts -%}
     {
-      title  : {{ p.title | jsonify }},
-      content: {{ p.content | markdownify | strip_html | strip_newlines | jsonify }},
-      url    : {{ p.url | relative_url | jsonify }}
+      "title"  : {{ p.title | jsonify }},
+      "content": {{ p.content | markdownify
+                             | strip_html
+                             | strip_newlines
+                             | jsonify }},
+      "url"    : {{ p.url | relative_url | jsonify }}
     }{% unless forloop.last %},{% endunless %}
   {%- endfor -%}
   ],
 
-  /* Everything else that isn’t a draft/static asset */
+  /* All regular pages except static assets */
   pages: [
-  {%- assign pages = site.pages
-       | where_exp:'item','item.dir !~ /^\/assets|^\/node_modules/'
-       | where_exp:'item','item.data.draft != true' -%}
-  {%- for pg in pages -%}
+  {%- assign docs = site.pages
+       | where_exp:'d','d.path contains \"/_site/\" or d.path contains \"/docs/\"'  -%}
+  {%- for pg in docs -%}
     {
-      title  : {{ pg.title | default: pg.slug | jsonify }},
-      content: {{ pg.content | markdownify | strip_html | strip_newlines | jsonify }},
-      url    : {{ pg.url | relative_url | jsonify }}
+      "title"  : {{ pg.title | default: pg.slug | jsonify }},
+      "content": {{ pg.content | markdownify
+                             | strip_html
+                             | strip_newlines
+                             | jsonify }},
+      "url"    : {{ pg.url | relative_url | jsonify }}
     }{% unless forloop.last %},{% endunless %}
   {%- endfor -%}
   ]

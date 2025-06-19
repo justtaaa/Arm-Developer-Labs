@@ -19,6 +19,11 @@ layout: none
     <div class="root" data-is-touch="false">
       {{ content }}
     </div>
+    <!-- data first -->
+    <script defer src="{{ '/assets/js/search-data.js' | relative_url }}"></script>
+    <!-- logic second -->
+    <script defer src="{{ '/assets/js/search.js'     | relative_url }}"></script>
+
     <script>
       {%- include scripts/common.js -%}
     </script>
