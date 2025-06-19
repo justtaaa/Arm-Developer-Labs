@@ -1,8 +1,9 @@
 ---
-layout: null
+---
+layout: null  
 ---
 
-/*  Auto-generated at build time  */
+/*  Auto-generated at build time; do not edit by hand  */
 window.TEXT_SEARCH_DATA = {
   /* Blog posts */
   posts: [
@@ -18,11 +19,10 @@ window.TEXT_SEARCH_DATA = {
   {%- endfor -%}
   ],
 
-  /* All regular pages except static assets */
+  /* Regular pages (skip obvious static assets) */
   pages: [
-  {%- assign docs = site.pages
-       | where_exp:'d','d.path contains \"/_site/\" or d.path contains \"/docs/\"'  -%}
-  {%- for pg in docs -%}
+  {%- for pg in site.pages -%}
+    {%- unless pg.path contains 'assets/' or pg.path contains 'node_modules/' or pg.name == '404.html' -%}
     {
       "title"  : {{ pg.title | default: pg.slug | jsonify }},
       "content": {{ pg.content | markdownify
@@ -31,6 +31,7 @@ window.TEXT_SEARCH_DATA = {
                              | jsonify }},
       "url"    : {{ pg.url | relative_url | jsonify }}
     }{% unless forloop.last %},{% endunless %}
+    {%- endunless -%}
   {%- endfor -%}
   ]
 };
