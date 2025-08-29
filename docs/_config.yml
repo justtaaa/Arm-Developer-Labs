@@ -203,7 +203,7 @@ exclude:
 
 defaults:
   - scope:
-      path: ""
+      path: "Projects"
       type: posts
     values:
       layout: article
